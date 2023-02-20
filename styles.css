@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');  
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(174, 121, 175, 0.9);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.button {
+    background-color: rgb(153, 16, 133);
+    border: 7px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.button-close {
+    display: flex;
+    position: fixed;
+    margin-top: 525px;
+    margin-left: 220px;
+
+}
+.button:hover {
+    background-color: rgb(113, 13, 98);
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    visibility: visible;
+    transition: visibility 2s, opacity 0.7s linear;
+}
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+.grid {
+    display: flex;
+    position: fixed;
+    width: 560px;
+    max-width: 100%;
+    height: 500px;
+    border: solid white 1px;
+    margin-top: 5px;
+    background-color: rgb(49, 18, 50);
+}
+.grid:hover {
+    cursor: none;
+}
+
+.block {
+    position: absolute;
+    border: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(245, 64, 245, 0.6);
+    width: 100px;
+    height: 20px;
+    background-color: rgb(197, 218, 63);
+}
+.user {
+    position: absolute;
+    bottom: 0;
+    border: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(60, 91, 219, 0.6);
+    width: 100px;
+    height: 20px;
+    background-color: rgb(186, 24, 186);
+}
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white
+}
+
+#alert { 
+    margin-top: 180px;
+    margin-left: 225px;
+    text-align: center;
+    color: rgb(255, 0, 225);
+}
